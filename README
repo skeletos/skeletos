@@ -1,0 +1,11 @@
+Skeletos is a clean and almost empty template as a start point for web projects.
+It's wrote using HTML5 and CSS3, so modern-browser oriented.
+based on HTML5Boilerplate, includes normalize.css, modernizer and jquery.
+
+Now avaliable:
+- Basic Template One Column
+- Gallery Template
+
+for the future:
+- Basic Template Two Columns
+- Gallery Index Template
