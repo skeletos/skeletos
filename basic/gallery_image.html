@@ -7,7 +7,7 @@
        More info: h5bp.com/b/378 -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <title>Skeletos: Basic Template One Column</title>
+  <title>Skeletos: Gallery Template</title>
 
   <meta name="description" content="">
   <meta name="author" content="">
@@ -35,25 +35,37 @@
   <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
        chromium.org/developers/how-tos/chrome-frame-getting-started -->
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->   
-  
+
   <div id="container">
     <header>
       <h1>Skeletos</h1>
-      <h2>Basic Template One Column</h2>
+      <h2>Gallery Template</h2>
     </header>
     <nav>
       <ul>
-        <li><a class="select" href="index.html">Basic</a></li>
+        <li><a href="index.html">Basic</a></li>
         <li><a href="#">2 Cols</a></li>
         <li><a href="#">Gallery Index</a></li>
-        <li><a href="gallery_image.html">Gallery Image</a></li>
+        <li><a class="select" href="gallery_image.html">Gallery Image</a></li>
       </ul>  
     </nav>
     <div id="main" role="main">
-      One column content
+      <section class="photo_section">
+        <ul class="commands">
+          <li><a href="#" title="First">&laquo;</a></li>
+          <li><a href="#" title="Prev">&lsaquo;</a></li>
+          <li class="index rotate"><a href="#" title="Index">&raquo;</a></li>
+          <li><a href="#" title="Next">&rsaquo;</a></li>
+          <li><a href="#" title="Last">&raquo;</a></li>
+        </ul>
+        <img class="image" src="photos/what_your_soul_sings.jpg">
+        <p class="description">
+          brief description of the photo/image
+        </p>
+      </section>
     </div>
     <footer class="clearfix">
-      <b>Seketos</b> Basic Template by <a href="http://tony.camaiani.it" target="_blank">Tony Camaiani</a>, find me on <a href="https://github.com/tonycamaiani/skeletos" target="_blank">GitHub</a>
+      <b>Seketos</b> Gallery Template by <a href="http://tony.camaiani.it" target="_blank">Tony Camaiani</a>, find me on <a href="https://github.com/tonycamaiani/skeletos" target="_blank">GitHub</a>
     </footer>
   </div> <!--! end of #container -->
   <!-- JavaScript at the bottom for fast page loading -->
@@ -74,6 +86,6 @@
     (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
     g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
     s.parentNode.insertBefore(g,s)}(document,'script'));
-  </script>   
+  </script> 
 </body>
 </html>
