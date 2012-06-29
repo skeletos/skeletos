@@ -95,12 +95,12 @@ header, nav, #main, footer {
 		margin: 5px 0;
 	}
 
-nav ul {
+nav.top ul {
 	text-align: center;
 	border-bottom: 1px dotted #efefef;
 }
 
-	nav ul li{
+	nav.top ul li{
 		display: inline;
 		margin: 0 10px 0 0;
 	}
@@ -109,6 +109,17 @@ nav ul {
 	margin-top: 25px;
 	margin-bottom: 25px;
 }
+
+  #main aside {
+    width: 200px;
+    margin-right: 10px;
+    float: left;
+  } 
+  
+  #main section.content {
+    width: 730px;
+    float: left;
+  }   
 
 footer {
 	text-align: center;
