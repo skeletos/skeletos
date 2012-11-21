@@ -193,7 +193,8 @@ section {
 section h2 { margin: 10px 0 20px; }
 
 section a.arrow {
-  font-weight: bold;
+  float: right;
+  text-indent: -9999px;
   background: url(../img/arrow_up.png) no-repeat center left;
   padding: 0 0 0 20px;
   font-size: 18px;
@@ -212,40 +213,43 @@ footer h3 {
   color: #efefef;
 }
 
-/* ===== gallery image styles =================================================== */
+footer img {
+  margin: 0 32px 0 0;
+}
 
-    ul.commands {
-      list-style: none;
-      list-style-image: none;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
+footer img.last {
+  margin: 0;
+}
 
-      ul.commands li {
-        display: inline-block;
-        font-size: 30px;
-        margin: 0 10px;
-      }
+img.img_right {
+  float: right;
+  margin: 30px 0 20px 50px;
+}
 
-      ul.commands li.index {
-        margin: 0 15px 0 10px;
-      }
-
-        ul.commands li a:hover {
-          text-decoration: none;
-        }
+img.img_left {
+  float: left;
+  margin: 20px 50px 0px 0;
+}
 
 
-    .photo_section img.image {
-      margin: 15px auto;
-      display: block;
-    }
+  .big_button_orange, .big_button_orange:visited {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 40px;
+    padding: 0 15px;
+    margin: 10px 164px 25px;
+    color: #fff;
+    background: #D9750B;
+    box-shadow: inset 0 0 5px 0 rgba(255, 255, 255, .3);
+  }
 
-    p.description {
-      width: 500px;
-      margin: 0 auto;
-    }
+  .big_button_orange:hover {
+    color: #eee;
+    background: #E0811B;
+    text-decoration: none;
+  }
+
+
 
 
 /* ===== media with different viewport classes ============================================ */
@@ -267,6 +271,21 @@ footer h3 {
 .left {float: left;}
 .right {float: right;}
 .block {display: block;}
+.clear { clear: both; }
+.overflow_hidden {overflow: hidden; margin-top: 30px; margin-bottom: 30px;}
+.centered { text-align: center;}
+.clear_block {
+  display: block;
+  clear: both;
+}
+
+.margin_bottom_10 { margin-bottom: 10px; }
+.margin_top_10 { margin-top: 10px; }
+.margin_right_30 { margin-right: 30px; }
+.width_450 { width: 450px; }
+
+.left p, .right p { margin-top: 0;}
+
 /* ===== media queries ========================================================== */
 @media only screen and (min-width: 480px) { /* Style adjustments for viewports 480px and over go here */ }
 @media only screen and (min-width: 768px) { /* Style adjustments for viewports 768px and over go here */ }
