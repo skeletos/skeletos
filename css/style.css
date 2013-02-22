@@ -124,6 +124,10 @@ nav.top ul {
 		display: inline;
 		margin: 0 25px 0 0;
 	}
+	
+	nav.top ul li.last{
+		margin: 0;
+	}
 
 	nav.top ul li a{
 		font-size: 12px;
