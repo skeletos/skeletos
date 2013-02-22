@@ -150,7 +150,7 @@ nav.top {
 
 #main {
 	margin-top: 25px;
-	margin-bottom: 25px;
+	margin-bottom: 50px;
 }
 
   #main aside {
@@ -179,6 +179,7 @@ nav.top {
   }   
 
 footer {
+	padding-top: 20px;
 	font-size: 14px;
 	text-align: center;
 	text-transform: uppercase;
