@@ -69,7 +69,7 @@ td { vertical-align: top; }
 /* ===== general styles ========================================================= */
 body {
 	font-family: 'Roboto', sans-serif;
-	background: #efefef;
+	background: #fefefe;
 }
 
 h2 {
@@ -89,7 +89,7 @@ p { font-size: 13px;}
 }
 
 header, nav, #main, footer {
-	padding: 10px;
+	padding: 10px 20px;
 }
 
 	header h1 {
@@ -116,31 +116,35 @@ header, nav, #main, footer {
 		margin: 5px 0;
 	}
 
-nav.top ul {
-	text-align: center;
+nav.top {
+	border-bottom: 1px solid #eee;
 }
 
-	nav.top ul li{
-		display: inline;
-		margin: 0 25px 0 0;
+	nav.top ul {
+		text-align: center;
 	}
+
+		nav.top ul li{
+			display: inline;
+			margin: 0 25px 0 0;
+		}
 	
-	nav.top ul li.last{
-		margin: 0;
-	}
+		nav.top ul li.last{
+			margin: 0;
+		}
 
-	nav.top ul li a{
-		font-size: 12px;
-		color: #A3A3A3;
-		text-transform: uppercase;
-		letter-spacing: 2px;
-	}
+		nav.top ul li a{
+			font-size: 12px;
+			color: #A3A3A3;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+		}
 
-	nav.top ul li a.select,
-	nav.top ul li a:hover {
-		color: #676767;
-		text-decoration: none;
-	}
+		nav.top ul li a.select,
+		nav.top ul li a:hover {
+			color: #676767;
+			text-decoration: none;
+		}
 	
 	
 
@@ -150,8 +154,8 @@ nav.top ul {
 }
 
   #main aside {
-    width: 200px;
-    margin-right: 10px;
+    width: 180px;
+    margin-right: 20px;
     float: left;
   } 
 
@@ -170,7 +174,7 @@ nav.top ul {
 
   
   #main section.content {
-    width: 730px;
+    width: 720px;
     float: left;
   }   
 
@@ -179,7 +183,7 @@ footer {
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	border-top: 1px dotted #efefef;
+	border-top: 1px solid #eee;
 }
 
 /* ===== gallery image styles =================================================== */
