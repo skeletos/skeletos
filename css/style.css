@@ -235,6 +235,8 @@ footer {
 	rotation:-90deg;				
 }
 
+
+
 /* ===== media with different viewport classes ============================================ */
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
@@ -250,9 +252,12 @@ footer {
 .clearfix:before, .clearfix:after { content: ""; display: table; }
 .clearfix:after { clear: both; }
 .clearfix { *zoom: 1; }
+.block {display: block;}
+
 .left {float: left;}
 .right {float: right;}
-.block {display: block;}
+.centered  { text-align: center; }
+
 /* ===== media queries ========================================================== */
 @media only screen and (min-width: 480px) { /* Style adjustments for viewports 480px and over go here */ }
 @media only screen and (min-width: 768px) { /* Style adjustments for viewports 768px and over go here */ }
