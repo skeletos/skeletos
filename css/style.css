@@ -87,7 +87,13 @@ header, nav, #main, footer {
 		font-size: 24px;
 		text-transform: uppercase;
 		letter-spacing: 2px;
+		color: #7C7C7C;
 		margin: 25px 0 5px;
+	}
+
+	header h1 span{
+		font-size: 18px;
+		color: #B3B3B3;
 	}
 
 	header h2 {
@@ -96,6 +102,7 @@ header, nav, #main, footer {
 		font-size: 18px;
 		text-transform: uppercase;
 		letter-spacing: 2px;
+		color: #B3B3B3;
 		margin: 5px 0;
 	}
 
@@ -109,7 +116,7 @@ nav.top ul {
 	}
 
 	nav.top ul li a{
-		font-size: 14px;
+		font-size: 12px;
 		color: #A3A3A3;
 		text-transform: uppercase;
 		letter-spacing: 2px;
