@@ -216,7 +216,7 @@ footer {
 			display: block;
 		}
 
-		p.description {
+		.photo_section figcaption {
 			width: 500px;
 			margin: 0 auto;
 			text-align: center;
