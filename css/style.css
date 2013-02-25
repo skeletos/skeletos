@@ -136,12 +136,12 @@ nav.top {
     nav.top ul li a{
       font-size: 12px;
       text-transform: uppercase;
-      letter-spacing: 2px;              
+      letter-spacing: 2px;
       border-bottom: 1px solid #fff;
     }
 
     nav.top ul li a.select {
-      color: #339ACC;     
+      color: #339ACC;
       border-bottom: 1px dotted #339ACC;
     }
 
@@ -208,6 +208,15 @@ footer {
 
     ul.grid li .image {
       margin-bottom: 5px;
+    }
+
+    ul.grid li a:hover .image {
+       -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+      filter: alpha(opacity=80);
+      -moz-opacity: 0.8;
+      -khtml-opacity: 0.8;
+      opacity: 0.8;
+
     }
 
     ul.grid li .gallery_description {
