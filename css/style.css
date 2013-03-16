@@ -68,7 +68,7 @@ td { vertical-align: top; }
 
 /* ===== general styles ========================================================= */
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Rambla', sans-serif;
   background: #fefefe;
 }
 
@@ -83,27 +83,30 @@ h2 {
 p { font-size: 13px;}
 
 #container {
-  width: 960px;
-  margin: 0 auto;
-  background: #fff;
+  background: radial-gradient(ellipse farthest-corner at center center , rgba(255, 255, 255, 0.88) 1%, rgba(255, 255, 255, 0.96) 66%, #BBBBBB 120%) repeat scroll 0 0 transparent;
+	height: 100%;
 }
 
 header, nav, #main, footer {
+  width: 960px;
+  margin: 0 auto;
   padding: 10px 20px;
 }
 
   header h1 {
     text-align: center;
-    font-size: 24px;
-    text-transform: uppercase;
+    font-size: 72px;
+    line-height: 72px;
+    
     letter-spacing: 2px;
     color: #333;
     margin: 25px 0 5px;
   }
 
   header h1 span{
-    font-size: 18px;
+    font-size: 32px;
     color: #666;
+		display: block;
   }
 
   header h2 {
@@ -149,6 +152,8 @@ nav.top {
 
 #main {
   margin-top: 25px;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
   margin-bottom: 50px;
 }
 
