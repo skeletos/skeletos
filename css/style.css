@@ -69,7 +69,7 @@ td { vertical-align: top; }
 /* ===== general styles ========================================================= */
 body {
   font-family: 'Rambla', sans-serif;
-  background: #fefefe;
+  background: #f5f5f5;
 }
 
 h2 {
@@ -83,30 +83,41 @@ h2 {
 p { font-size: 13px;}
 
 #container {
-  background: radial-gradient(ellipse farthest-corner at center center , rgba(255, 255, 255, 0.88) 1%, rgba(255, 255, 255, 0.96) 66%, #BBBBBB 120%) repeat scroll 0 0 transparent;
-	height: 100%;
 }
 
-header, nav, #main, footer {
+#main, footer {
   width: 960px;
   margin: 0 auto;
   padding: 10px 20px;
 }
 
+header {
+  background: #cf7b15;
+}
+
+hgroup {
+  width: 960px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+
   header h1 {
     text-align: center;
     font-size: 72px;
     line-height: 72px;
-    
+
     letter-spacing: 2px;
-    color: #333;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
     margin: 25px 0 5px;
   }
 
   header h1 span{
     font-size: 32px;
-    color: #666;
-		display: block;
+    color: #fff;
+    text-transform: uppercase;
+    display: block;
   }
 
   header h2 {
@@ -152,8 +163,8 @@ nav.top {
 
 #main {
   margin-top: 25px;
-	border-top: 1px solid #eee;
-	border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
   margin-bottom: 50px;
 }
 
