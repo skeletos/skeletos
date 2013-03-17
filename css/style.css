@@ -72,21 +72,13 @@ body {
   background: #f5f5f5;
 }
 
-h2 {
-  font-size: 18px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: #B3B3B3;
-  margin: 5px 0;
-}
-
 p { font-size: 13px;}
 
 #container {
 }
 
-#main, footer {
-  width: 960px;
+#main, footer, hgroup {
+  width: 1000px;
   margin: 0 auto;
   padding: 10px 20px;
 }
@@ -95,41 +87,41 @@ header {
   background: #cf7b15;
 }
 
-hgroup {
-  width: 960px;
-  margin: 0 auto;
-  padding: 10px 20px;
-}
-
 
   header h1 {
     text-align: center;
     font-size: 72px;
     line-height: 72px;
-
-    letter-spacing: 2px;
     color: #fff;
-    text-shadow: 1px 1px 1px #000;
+    text-shadow: 2px 2px 2px rgba( 0, 0, 0, 0.5);
     margin: 25px 0 5px;
   }
 
   header h1 span{
-    font-size: 32px;
+    font-size: 30px;
+		line-height: 30px;
+		text-align: right;
     color: #fff;
     text-transform: uppercase;
+		font-weight: normal;
+		margin: 0 68px 0 0;
     display: block;
   }
 
   header h2 {
+		width: 320px;
     font-weight: normal;
-    text-align: center;
-    font-size: 18px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #666;
-    margin: 5px 0;
+    text-align: right;
+    font-size: 30px;
+		line-height: 34px;
+    color: #fff;
+		text-shadow: 2px 2px 2px rgba( 0, 0, 0, 0.5);
+    margin: 80px 0 30px;
   }
 
+  header h2 span {
+    display: block;
+  }
 nav.top {
   border-bottom: 1px solid #eee;
 }
