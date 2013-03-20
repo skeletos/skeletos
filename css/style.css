@@ -172,13 +172,18 @@ footer {
     margin: 0;
   }
 
+    footer section p{
+      margin: 0;
+    }
+
+
   footer section.last {
     margin: 0;
   }
 
   footer section h3 {
     font-size: 22px;
-    margin: 0 0 15px 0;
+    margin: 0 0 10px 0;
   }
 
   footer section.first p{
@@ -197,11 +202,6 @@ footer {
     margin-bottom: 6px;
     display: inline-block;
   }
-
-  footer section.last p{
-    margin: 0;
-  }
-
 
   a.workether {
     background: url(../img/workehter_logo.png) no-repeat top left;
