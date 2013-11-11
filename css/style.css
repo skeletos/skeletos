@@ -1,0 +1,266 @@
+/* ===== Author: Tony Camaiani http://tony.camaiani.it ========================== */
+html { font-size: 100%; overflow-y: scroll; }
+body, button, input, select, textarea { color: #333; }
+
+::-moz-selection { background: #006799; color: #fff; text-shadow: none; }
+::selection { background: #006799; color: #fff; text-shadow: none; }
+
+a { color: #006799; text-decoration: none; }
+a:visited { color: #006799; }
+a:hover { color: #339ACC; }
+
+
+
+/* ===== general styles ========================================================= */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #fefefe;
+}
+
+h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #B3B3B3;
+  margin: 5px 0;
+}
+
+p { font-size: 13px;}
+
+#container {
+  width: 960px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+header, nav, #main, footer {
+  padding: 10px 20px;
+}
+
+  header h1 {
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #333;
+    margin: 25px 0 5px;
+  }
+
+  header h1 span{
+    font-size: 18px;
+    color: #666;
+  }
+
+  header h2 {
+    font-weight: normal;
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #666;
+    margin: 5px 0;
+  }
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav.top {
+  border-bottom: 1px solid #eee;
+}
+
+  nav.top ul {
+    text-align: center;
+  }
+
+    nav.top ul li{
+      display: inline;
+      margin: 0 25px 0 0;
+    }
+
+    nav.top ul li.last{
+      margin: 0;
+    }
+
+    nav.top ul li a{
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      border-bottom: 1px solid #fff;
+    }
+
+    nav.top ul li a.select {
+      color: #339ACC;
+      border-bottom: 1px dotted #339ACC;
+    }
+
+
+
+#main {
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+  #main aside {
+    width: 180px;
+    margin-right: 20px;
+    float: left;
+  }
+
+  #main aside nav ul li a{
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #fff;
+  }
+
+  #main aside nav ul li a.select
+ {
+    color: #339ACC;
+    border-bottom: 1px dotted #339ACC;
+  }
+
+
+  #main section.content {
+    width: 720px;
+    float: left;
+  }
+
+footer {
+  padding-top: 20px;
+  font-size: 13px;
+  text-align: center;
+  letter-spacing: 2px;
+  border-top: 1px solid #eee;
+}
+
+/* ===== gallery image styles =================================================== */
+    ul.grid {
+      padding: 0;
+      margin: 25px auto;
+    }
+
+    ul.size_150 { width: 738px; }
+    ul.size_75 { width: 570px; }
+
+    ul.grid li {
+      list-style-type: none;
+      float: left;
+    }
+
+
+    ul.size_150 li { width: 150px; margin: 0 40px 40px 0; }
+    ul.size_75 li { width: 75px; padding: 0 10px; margin-bottom: 20px; }
+
+    ul.grid li.first{ clear: left; }
+    ul.grid li.last{ margin-right: 0; }
+
+    ul.grid li .image {
+      margin-bottom: 5px;
+    }
+
+    ul.grid li a:hover .image {
+       -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+      filter: alpha(opacity=80);
+      -moz-opacity: 0.8;
+      -khtml-opacity: 0.8;
+      opacity: 0.8;
+
+    }
+
+    ul.grid li .gallery_description {
+      font-size: 12px;
+      line-height: 14px;
+      text-align: center;
+      display: block;
+    }
+
+    ul.commands {
+      list-style: none;
+      list-style-image: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+      ul.commands li {
+        display: inline-block;
+        font-size: 30px;
+        margin: 0 10px;
+      }
+
+      ul.commands li.index {
+        margin: 0 15px 0 10px;
+      }
+
+        ul.commands li a:hover {
+          border-bottom: 0;
+        }
+
+    .photo_section img.image {
+      margin: 15px auto 10px;
+      display: block;
+    }
+
+    .photo_section .image_caption {
+      width: 500px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+
+
+
+
+.rotate {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  rotation:-90deg;
+}
+
+
+
+/* ===== media with different viewport classes ============================================ */
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+/* ===== non-semantic helper classes ============================================ */
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.ir br { display: none; }
+.hidden { display: none !important; visibility: hidden; }
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+.invisible { visibility: hidden; }
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+.block {display: block;}
+
+.left {float: left;}
+.right {float: right;}
+.centered  { text-align: center; }
+
+/* ===== media queries ========================================================== */
+@media only screen and (min-width: 480px) { /* Style adjustments for viewports 480px and over go here */ }
+@media only screen and (min-width: 768px) { /* Style adjustments for viewports 768px and over go here */ }
+/* ===== print styles ========================================================== */
+@media print {
+  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; }
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; }
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}
