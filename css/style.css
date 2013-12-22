@@ -28,7 +28,7 @@ h2 {
 p { font-size: 13px;}
 
 #container {
-  width: 960px;
+  width: 980px;
   margin: 0 auto;
   background: #fff;
 }
@@ -37,25 +37,20 @@ header, nav, #main, footer {
   padding: 10px 20px;
 }
 
-  header h1 {
-    text-align: center;
-    font-size: 24px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #333;
-    margin: 25px 0 5px;
+  header img {
+    margin: 0 20px 0 0;
   }
 
-  header h1 span{
-    font-size: 18px;
-    color: #666;
+  header h1 {
+    font-size: 50px;
+    letter-spacing: 2px;
+    color: #333;
+    margin: 10px 0 5px;
   }
 
   header h2 {
     font-weight: normal;
-    text-align: center;
-    font-size: 18px;
-    text-transform: uppercase;
+    font-size: 24px;
     letter-spacing: 2px;
     color: #666;
     margin: 5px 0;
