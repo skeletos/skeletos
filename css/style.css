@@ -51,42 +51,48 @@ body {
   background: #fefefe;
 }
 
+#container {
+  margin: 0 12px;
+}
+
+h1 {
+  letter-spacing: 2px;
+  color: #B3B3B3;
+}
+
 h2 {
-  font-size: 24px;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #B3B3B3;
-  margin: 5px 0;
+  margin: 10px 0;
 }
 
 p { font-size: 13px;}
 
-#container {
-  width: 980px;
-  margin: 0 auto;
-  background: #fff;
-}
+
 
 header, nav, #main, footer {
   padding: 10px 20px;
 }
 
-  header img {
-    margin: 0 20px 0 0;
+  .user_photo {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
   }
 
   header h1 {
-    font-size: 50px;
-    letter-spacing: 2px;
     color: #333;
-    margin: 10px 0 5px;
+    text-align: center;
+    margin: 5px 0;
   }
 
   header h2 {
+    font-size: 1.2em;
     font-weight: normal;
-    font-size: 24px;
-    letter-spacing: 2px;
     color: #666;
+    text-align: center;
     margin: 5px 0;
   }
 
@@ -124,7 +130,7 @@ nav ul {
     }
 
   nav .social {
-    text-align: right;
+    text-align: center;
   }
 
     nav .social li{
@@ -137,7 +143,7 @@ nav ul {
     }
 
 #main {
-  margin-top: 25px;
+  margin-top: 0px;
   margin-bottom: 50px;
 }
 
@@ -251,25 +257,6 @@ footer {
     }
 
 
-
-
-
-.rotate {
-  -webkit-transform: rotate(-90deg);
-  -moz-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  -o-transform: rotate(-90deg);
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-  rotation:-90deg;
-}
-
-
-
-/* ===== media with different viewport classes ============================================ */
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
-
 /* ===== non-semantic helper classes ============================================ */
 .ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
 .ir br { display: none; }
@@ -287,8 +274,67 @@ footer {
 .centered  { text-align: center; }
 
 /* ===== media queries ========================================================== */
-@media only screen and (min-width: 480px) { /* Style adjustments for viewports 480px and over go here */ }
-@media only screen and (min-width: 768px) { /* Style adjustments for viewports 768px and over go here */ }
+
+/* Used to alter styles for screens at least 768px wide. */
+@media only screen and (min-width: 768px) {
+
+  .user_photo {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 0 20px 0 0;
+  }
+
+  header h1 {
+    font-size: 38px;
+    text-align: left;
+    margin: 5px 0;
+  }
+
+  header h2 {
+    font-size: 20px;
+    text-align: left;
+    margin: 5px 0;
+  }
+
+  nav .social {
+    text-align: right;
+  }
+
+
+} /* min-width: 768px */
+
+/* Used to alter styles for screens at least 960px wide. */
+@media only screen and (min-width: 1024px) {
+
+  #container {
+    width: 1000px;
+    margin: 0 auto;
+    background: #fff;
+  }
+
+  .user_photo {
+    float: left;
+    width: 150px;
+    height: 150px;
+  }
+
+  header h1 {
+    font-size: 50px;
+    text-align: left;
+    margin: 10px 0 5px;
+  }
+
+  header h2 {
+    font-size: 24px;
+    text-align: left;
+  }
+
+} /* min-width: 1024px */
+
+
+
+
 /* ===== print styles ========================================================== */
 @media print {
   * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; }
