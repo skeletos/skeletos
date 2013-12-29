@@ -11,18 +11,17 @@ Skeletos is a clean and almost empty template built as a starting point for web 
 Based on HTML5Boilerplate, it's wrote in HTML5 and CSS3,
 including normalize.css, modernizer and jquery.
 
-Now avaliable:
-- Basic Template One Column
-- Basic Template Two Columns
-- Gallery Index Template
-- Gallery Template
-- Single Image Template
+Resume template
+
+includes:
+	Mono Social Icons Font - http://drinchev.github.io/monosocialiconsfont/
+
 
 to do list:
--update favicon image
--split css by page type
--image navigation in modal window
--responsive layout
+	-update favicon image
+	-remove unused css
+	- find icons for: email - web - phone - top(up) - pdf - print
+	- print styles
+
 
 for info drop a note to camaiani@gmail.com
-public demo at http://skeletos.ap01.aws.af.cm
