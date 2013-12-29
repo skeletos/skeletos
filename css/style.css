@@ -28,7 +28,6 @@
 
 a.symbol:before {
     content: attr(title);
-    margin-right: 0.3em;
     font-size: 130%;
 }
           
@@ -67,11 +66,19 @@ h2 {
   margin: 10px 0;
 }
 
-p { font-size: 13px;}
+p { font-size: 0.9em;}
 
 
 
-header, nav, #main, footer {
+header {
+  padding: 10px 20px 0;
+}
+
+.presence {
+  padding: 0 20px 10px;
+}
+
+nav, #main, footer {
   padding: 10px 20px;
 }
 
@@ -102,45 +109,68 @@ nav ul {
   list-style: none;
 }
 
-  nav .top {
+  nav .sections {
     text-align: center;
     border-bottom: 1px solid #eee;
-    padding-bottom: 10px;
+    border-top: 1px solid #eee;
+    padding: 10px 0;
   }
 
-    nav .top li{
+    nav .sections li{
       display: inline;
       margin: 0 25px 0 0;
     }
 
-    nav .top li.last{
+    nav .sections li.last{
       margin: 0;
     }
 
-    nav .top li a{
-      font-size: 12px;
+    nav .sections li a{
+      font-size: 0.8em;
       text-transform: uppercase;
       letter-spacing: 2px;
       border-bottom: 1px solid #fff;
+      white-space: nowrap;
     }
 
-    nav .top li a.select {
+    nav .sections li a.select {
       color: #339ACC;
       border-bottom: 1px dotted #339ACC;
     }
 
-  nav .social {
-    text-align: center;
+.contact {
+  margin: 10px 0;
+  padding: 0;
+  text-align: center;
+}
+
+  .contact li {
+    display: inline-block;
+    font-size: 1em;
+    line-height: 28px;
   }
 
-    nav .social li{
-      display: inline;
-      margin: 0 0 0 20px;
-    }
+  .contact li.web,
+  .contact li.email {
+    width: 49%;
+  }
 
-    nav .social a {
-      font-size: 30px;
-    }
+.social {
+  margin: 10px 0 0;
+  padding: 0;
+  text-align: center;
+}
+
+  .social li{
+    display: inline-block;
+    margin: 0 0 0 20px;
+    padding: 0;
+  }
+
+  .social a {
+    font-size: 1.9em;
+    line-height: 20px;
+  }
 
 #main {
   margin-top: 0px;
@@ -297,9 +327,30 @@ footer {
     margin: 5px 0;
   }
 
-  nav .social {
-    text-align: right;
+  .presence {
+    padding: 0 20px 5px;
   }
+
+  .contact {
+    float: left;
+    text-align: left;
+    margin: 10px 0 0 0;
+  }
+
+  .contact li {
+    margin: 0 25px 0 0;
+  }
+
+  .contact li.web,
+  .contact li.email {
+    width: auto;
+  }
+
+  .social {
+    float: right;
+    text-align: left;
+  }
+
 
 
 } /* min-width: 768px */
@@ -322,11 +373,20 @@ footer {
   header h1 {
     font-size: 50px;
     text-align: left;
-    margin: 10px 0 5px;
+    margin: 15px 0 5px;
   }
 
   header h2 {
     font-size: 24px;
+    text-align: left;
+  }
+
+  .contact {
+  float: left;
+  }
+
+  .social {
+    float: right;
     text-align: left;
   }
 
