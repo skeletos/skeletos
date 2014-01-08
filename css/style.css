@@ -211,7 +211,11 @@ ul.skill_list {
 ul.skill_list li {
   display: inline-block;
   border: 1px solid #eee;
-
+  padding: 0 5px;
+  margin: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 }
 
 
