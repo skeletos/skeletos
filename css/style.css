@@ -47,6 +47,7 @@ a:hover { color: #339ACC; }
 /* ===== general styles ========================================================= */
 body {
   font-family: 'Roboto', sans-serif;
+  font-size: 0.9em;
   background: #fefefe;
 }
 
@@ -66,7 +67,6 @@ h2 {
   margin: 10px 0;
 }
 
-p { font-size: 0.9em;}
 
 
 
@@ -78,7 +78,7 @@ header {
   padding: 0 20px 10px;
 }
 
-nav, #main, footer {
+nav, main, footer {
   padding: 10px 20px;
 }
 
@@ -87,6 +87,9 @@ nav, #main, footer {
     height: 50px;
     display: block;
     margin: 0 auto;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
   }
 
   header h1 {
@@ -172,35 +175,44 @@ nav ul {
     line-height: 20px;
   }
 
-#main {
+main {
   margin-top: 0px;
   margin-bottom: 50px;
 }
 
-  #main aside {
-    width: 180px;
-    margin-right: 20px;
-    float: left;
-  }
-
-  #main aside nav ul li a{
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    border-bottom: 1px solid #fff;
-  }
-
-  #main aside nav ul li a.select
- {
-    color: #339ACC;
-    border-bottom: 1px dotted #339ACC;
-  }
+main section {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
 
 
-  #main section.content {
-    width: 720px;
-    float: left;
-  }
+ul.single_experience {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  border-bottom: 1px dashed #eee;
+}
+
+ul.single_experience .dates, ul.single_experience .position, ul.single_experience .company{}
+
+ul.single_experience .dates { font-style: italic; font-size: 1em; }
+ul.single_experience .position { font-weight: bold; font-size: 1.2em; }
+ul.single_experience .company { font-size: 1.1em; }
+ul.single_experience .activities { margin-top: 10px; }
+
+ul.skill_list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+}
+
+ul.skill_list li {
+  display: inline-block;
+  border: 1px solid #eee;
+
+}
 
 
 
@@ -211,80 +223,6 @@ footer {
   letter-spacing: 2px;
   border-top: 1px solid #eee;
 }
-
-/* ===== gallery image styles =================================================== */
-    ul.grid {
-      padding: 0;
-      margin: 25px auto;
-    }
-
-    ul.size_150 { width: 738px; }
-    ul.size_75 { width: 570px; }
-
-    ul.grid li {
-      list-style-type: none;
-      float: left;
-    }
-
-
-    ul.size_150 li { width: 150px; margin: 0 40px 40px 0; }
-    ul.size_75 li { width: 75px; padding: 0 10px; margin-bottom: 20px; }
-
-    ul.grid li.first{ clear: left; }
-    ul.grid li.last{ margin-right: 0; }
-
-    ul.grid li .image {
-      margin-bottom: 5px;
-    }
-
-    ul.grid li a:hover .image {
-       -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
-      filter: alpha(opacity=80);
-      -moz-opacity: 0.8;
-      -khtml-opacity: 0.8;
-      opacity: 0.8;
-
-    }
-
-    ul.grid li .gallery_description {
-      font-size: 12px;
-      line-height: 14px;
-      text-align: center;
-      display: block;
-    }
-
-    ul.commands {
-      list-style: none;
-      list-style-image: none;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
-
-      ul.commands li {
-        display: inline-block;
-        font-size: 30px;
-        margin: 0 10px;
-      }
-
-      ul.commands li.index {
-        margin: 0 15px 0 10px;
-      }
-
-        ul.commands li a:hover {
-          border-bottom: 0;
-        }
-
-    .photo_section img.image {
-      margin: 15px auto 10px;
-      display: block;
-    }
-
-    .photo_section .image_caption {
-      width: 500px;
-      margin: 0 auto;
-      text-align: center;
-    }
 
 
 /* ===== non-semantic helper classes ============================================ */
@@ -351,6 +289,8 @@ footer {
     text-align: left;
   }
 
+  ul.single_experience .dates, ul.single_experience .position, ul.single_experience .company{ font-size: 1.2em; display: inline-block; width: 33%; vertical-align: top; margin-bottom: 10px;}
+
 
 
 } /* min-width: 768px */
@@ -389,6 +329,8 @@ footer {
     float: right;
     text-align: left;
   }
+
+  ul.single_experience .dates, ul.single_experience .position, ul.single_experience .company{ font-size: 1.2em; display: inline-block; width: 33%; vertical-align: top; margin-bottom: 10px;}
 
 } /* min-width: 1024px */
 
